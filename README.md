@@ -1,13 +1,13 @@
-<!-- Dark Neon AI Engineer Profile — Mohammad Sadegh Abbaszadeh -->
+<!-- Dark Neon AI Engineer Profile | Mohammad Sadegh Abbaszadeh -->
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:050810,50:0a0e17,100:1a0533&height=180&section=header&text=Mohammad%20Sadegh%20Abbaszadeh&fontSize=38&fontColor=00f5ff&animation=twinkling&fontAlignY=38&desc=AI%20Engineer%20%7C%20Neural%20Systems%20%26%20Production%20LLMs&descSize=16&descAlignY=62&descAlign=50&stroke=bf00ff"/>
 
 <p align="center">
-  <img src="./assets/neural-header.svg" width="100%" alt="Neural network — layers of learning and inference"/>
+  <img src="./assets/neural-header.svg" width="100%" alt="Neural network layers of learning and inference"/>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&duration=2800&pause=900&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=920&height=90&lines=Synapsing+ideas+into+intelligent+systems...;RAG+%7C+LLMs+%7C+Multi-Agent+Orchestration;Fine-tuning+%7C+Distillation+%7C+Neural+Inference;MLOps+%7C+Kubernetes+%7C+Production+AI+at+Scale" alt="Typing animation — AI engineering focus areas"/>
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&duration=2800&pause=900&color=00F5FF&center=true&vCenter=true&multiline=true&repeat=true&width=920&height=90&lines=Synapsing+ideas+into+intelligent+systems...;RAG+%7C+LLMs+%7C+Multi-Agent+Orchestration;Fine-tuning+%7C+Distillation+%7C+Neural+Inference;MLOps+%7C+Kubernetes+%7C+Production+AI+at+Scale" alt="Typing animation AI engineering focus areas"/>
 </p>
 
 <p align="center">
@@ -26,29 +26,33 @@
 
 <img width="100%" src="./assets/neural-pulse.svg" alt="Neural pulse divider"/>
 
-## ?? Neural Profile
+<p align="left">
+  <img src="https://img.shields.io/badge/NEURAL-Profile-00f5ff?style=for-the-badge&labelColor=0a0e17&color=1a0533"/>
+</p>
 
 ```yaml
-role:        AI Team Lead · Principal Data Scientist
+role:        AI Team Lead | Principal Data Scientist
 company:     Vortem
-focus:       Generative AI · Agentic Systems · MLOps
-experience:  7+ years · Fintech · HealthTech · Insurance
-philosophy:  "Models learn patterns — I architect systems that learn from production."
+focus:       Generative AI | Agentic Systems | MLOps
+experience:  7+ years | Fintech | HealthTech | Insurance
+philosophy:  "Models learn patterns - I architect systems that learn from production."
 ```
 
-Principal AI engineer who lives at the intersection of **deep learning**, **language models**, and **real-world deployment**. I design neural pipelines that don't just train — they **infer, adapt, and scale** in production.
+Principal AI engineer who lives at the intersection of **deep learning**, **language models**, and **real-world deployment**. I design neural pipelines that don't just train - they **infer, adapt, and scale** in production.
 
 | Domain | What I Build |
 |:------:|:-------------|
-| ?? **Generative AI** | RAG, fine-tuning, CPT, DPO, RLHF, LLM ? SLM distillation |
-| ?? **Agentic AI** | CrewAI, LangChain, MCP, autonomous multi-agent workflows |
-| ? **Inference** | vLLM, GGUF/AWQ quantization, low-latency neural serving |
-| ??? **MLOps** | MLflow, Kubernetes, Docker, CI/CD on AWS · GCP · Azure |
-| ?? **Classical ML** | XGBoost, survival analysis, fraud/risk engines, A/B testing |
+| **Generative AI** | RAG, fine-tuning, CPT, DPO, RLHF, LLM to SLM distillation |
+| **Agentic AI** | CrewAI, LangChain, MCP, autonomous multi-agent workflows |
+| **Inference** | vLLM, GGUF/AWQ quantization, low-latency neural serving |
+| **MLOps** | MLflow, Kubernetes, Docker, CI/CD on AWS / GCP / Azure |
+| **Classical ML** | XGBoost, survival analysis, fraud/risk engines, A/B testing |
 
 <img width="100%" src="./assets/neural-pulse.svg" alt="Section divider"/>
 
-## ? Synaptic Tech Stack
+<p align="left">
+  <img src="https://img.shields.io/badge/SYNAPTIC-Tech_Stack-bf00ff?style=for-the-badge&labelColor=0a0e17&color=1a0533"/>
+</p>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,docker,kubernetes,fastapi,postgres,aws,gcp,azure,git,linux&theme=dark&perline=6" alt="Core technology stack"/>
@@ -69,13 +73,15 @@ Principal AI engineer who lives at the intersection of **deep learning**, **lang
 
 <img width="100%" src="./assets/neural-pulse.svg" alt="Section divider"/>
 
-## ?? Featured Neural Systems
+<p align="left">
+  <img src="https://img.shields.io/badge/FEATURED-Neural_Systems-00ff88?style=for-the-badge&labelColor=0a0e17&color=1a0533"/>
+</p>
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>? <a href="https://github.com/msabbaszadeh/Electron">Electron</a></h3>
-      <p>Open-source <strong>RAG-powered recommendation engine</strong> — vector search, embeddings, and LLM personalization.</p>
+      <h3><a href="https://github.com/msabbaszadeh/Electron">Electron</a></h3>
+      <p>Open-source <strong>RAG-powered recommendation engine</strong> - vector search, embeddings, and LLM personalization.</p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-00f5ff?style=flat-square&logo=typescript&logoColor=0a0e17"/>
         <img src="https://img.shields.io/badge/RAG-bf00ff?style=flat-square"/>
@@ -84,8 +90,8 @@ Principal AI engineer who lives at the intersection of **deep learning**, **lang
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>?? Enterprise ML Portfolio</h3>
-      <p>Health analytics & predictive modeling on <strong>300K+</strong> patient records — DNN, ensemble methods, survival analysis.</p>
+      <h3>Enterprise ML Portfolio</h3>
+      <p>Health analytics and predictive modeling on <strong>300K+</strong> patient records - DNN, ensemble methods, survival analysis.</p>
       <p>
         <a href="https://github.com/msabbaszadeh/Machine-learning-DNN-ETC-on-cardiovascular-disease-patients-data">
           <img src="https://img.shields.io/badge/Cardiovascular_ML-00f5ff?style=for-the-badge&logo=heart&logoColor=0a0e17"/>
@@ -95,8 +101,8 @@ Principal AI engineer who lives at the intersection of **deep learning**, **lang
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>?? Production RAG · Insurance</h3>
-      <p>Claims document automation with custom chunking & vector indexing — <strong>+12% throughput</strong> in production. <em>(Private repo)</em></p>
+      <h3>Production RAG - Insurance</h3>
+      <p>Claims document automation with custom chunking and vector indexing - <strong>+12% throughput</strong> in production. <em>(Private repo)</em></p>
       <p>
         <img src="https://img.shields.io/badge/LangChain-bf00ff?style=flat-square"/>
         <img src="https://img.shields.io/badge/Pinecone-00f5ff?style=flat-square"/>
@@ -104,8 +110,8 @@ Principal AI engineer who lives at the intersection of **deep learning**, **lang
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>?? Classical ML Lab</h3>
-      <p>Diabetes SVM · Kidney stone classification · Deep learning notebooks — foundational ML experiments.</p>
+      <h3>Classical ML Lab</h3>
+      <p>Diabetes SVM, kidney stone classification, deep learning notebooks - foundational ML experiments.</p>
       <p>
         <a href="https://github.com/msabbaszadeh/diabets-analysis-SVM-model">
           <img src="https://img.shields.io/badge/Diabetes_SVM-bf00ff?style=for-the-badge"/>
@@ -118,11 +124,13 @@ Principal AI engineer who lives at the intersection of **deep learning**, **lang
   </tr>
 </table>
 
-> ?? Most enterprise neural pipelines (agentic AI, MLOps, production RAG) live in **private repos**. Happy to walk through architecture & impact in conversations.
+> **Note:** Most enterprise neural pipelines (agentic AI, MLOps, production RAG) live in **private repos**. Happy to walk through architecture and impact in conversations.
 
 <img width="100%" src="./assets/neural-pulse.svg" alt="Section divider"/>
 
-## ?? GitHub Neural Activity
+<p align="left">
+  <img src="https://img.shields.io/badge/GITHUB-Neural_Activity-ff006e?style=for-the-badge&labelColor=0a0e17&color=1a0533"/>
+</p>
 
 <p align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=msabbaszadeh&show_icons=true&theme=transparent&hide_border=false&border_radius=12&bg_color=0a0e17&title_color=00f5ff&icon_color=bf00ff&text_color=c9d1d9&border_color=30363d&include_all_commits=true&count_private=true" alt="GitHub stats"/>
@@ -135,15 +143,17 @@ Principal AI engineer who lives at the intersection of **deep learning**, **lang
 
 <img width="100%" src="./assets/neural-pulse.svg" alt="Section divider"/>
 
-## ??? Currently Training & Deploying
+<p align="left">
+  <img src="https://img.shields.io/badge/CURRENTLY-Training_%26_Deploying-00f5ff?style=for-the-badge&labelColor=0a0e17&color=1a0533"/>
+</p>
 
 ```mermaid
 graph LR
-    A[?? Data Ingestion] --> B[?? Embedding Layer]
-    B --> C[?? Vector Retrieval]
-    C --> D[?? LLM Inference]
-    D --> E[? Agent Orchestration]
-    E --> F[?? Production Monitor]
+    A[Data Ingestion] --> B[Embedding Layer]
+    B --> C[Vector Retrieval]
+    C --> D[LLM Inference]
+    D --> E[Agent Orchestration]
+    E --> F[Production Monitor]
 
     style A fill:#0a0e17,stroke:#00f5ff,color:#c9d1d9
     style B fill:#0a0e17,stroke:#bf00ff,color:#c9d1d9
@@ -153,11 +163,11 @@ graph LR
     style F fill:#0a0e17,stroke:#39ff14,color:#c9d1d9
 ```
 
-- Multi-agent orchestration with **CrewAI** & **MCP**
-- LLM distillation & quantization for edge neural inference
-- Production RAG evaluation & observability frameworks
+- Multi-agent orchestration with **CrewAI** and **MCP**
+- LLM distillation and quantization for edge neural inference
+- Production RAG evaluation and observability frameworks
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0533,50:0a0e17,100:050810&height=100&section=footer&text=Let%27s%20connect%20synapses%20%E2%86%92%20msabbaszadeh1997@gmail.com&fontSize=18&fontColor=00ff88&animation=twinkling&stroke=00f5ff"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0533,50:0a0e17,100:050810&height=100&section=footer&text=Let%27s%20connect%20synapses%20-%20msabbaszadeh1997%40gmail.com&fontSize=18&fontColor=00ff88&animation=twinkling&stroke=00f5ff"/>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=msabbaszadeh&label=Profile+Views&color=00f5ff&style=for-the-badge" alt="Profile views"/>
