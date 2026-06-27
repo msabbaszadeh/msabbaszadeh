@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 340" role="img" aria-label="Deep neural network architecture">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030508"/>
+      <stop offset="45%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#150528"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.08"/>
+      <stop offset="45%" stop-color="#bf00ff" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0.08"/>
+    </linearGradient>
+    <radialGradient id="cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#0044aa"/>
+    </radialGradient>
+    <radialGradient id="magenta" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#ff006e"/>
+      <stop offset="100%" stop-color="#7700cc"/>
+    </radialGradient>
+    <radialGradient id="green" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#39ff14"/>
+      <stop offset="100%" stop-color="#008855"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="980" height="340" rx="18" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="977" height="337" rx="16" fill="none" stroke="#00f5ff" stroke-opacity="0.35" stroke-width="2"/>
+
+  <text x="490" y="38" text-anchor="middle" font-family="monospace" font-size="16" font-weight="700" fill="#00f5ff" letter-spacing="4">DEEP NEURAL NETWORK</text>
+  <text x="490" y="58" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e" letter-spacing="2">INPUT  -  HIDDEN LAYERS  -  OUTPUT  -  INFERENCE</text>
+
+  <!-- grid -->
+  <g stroke="#00f5ff" stroke-opacity="0.05">
+    <path d="M0 85 H980 M0 170 H980 M0 255 H980"/>
+    <path d="M98 70 V300 M245 70 V300 M392 70 V300 M539 70 V300 M686 70 V300 M833 70 V300"/>
+  </g>
+
+  <!-- synapse wires -->
+  <g stroke="url(#wire)" stroke-width="1">
+    <!-- input 5 nodes x hidden1 7 nodes -->
+    <line x1="98" y1="95" x2="245" y2="80"/><line x1="98" y1="95" x2="245" y2="115"/>
+    <line x1="98" y1="95" x2="245" y2="150"/><line x1="98" y1="95" x2="245" y2="185"/>
+    <line x1="98" y1="95" x2="245" y2="220"/><line x1="98" y1="95" x2="245" y2="255"/>
+    <line x1="98" y1="95" x2="245" y2="290"/>
+    <line x1="98" y1="140" x2="245" y2="80"/><line x1="98" y1="140" x2="245" y2="150"/>
+    <line x1="98" y1="140" x2="245" y2="220"/><line x1="98" y1="140" x2="245" y2="290"/>
+    <line x1="98" y1="185" x2="245" y2="115"/><line x1="98" y1="185" x2="245" y2="185"/>
+    <line x1="98" y1="185" x2="245" y2="255"/><line x1="98" y1="230" x2="245" y2="150"/>
+    <line x1="98" y1="230" x2="245" y2="220"/><line x1="98" y1="275" x2="245" y2="185"/>
+    <line x1="98" y1="275" x2="245" y2="290"/><line x1="98" y1="320" x2="245" y2="255"/>
+    <!-- hidden1 -> hidden2 -->
+    <line x1="245" y1="80" x2="392" y2="90"/><line x1="245" y1="150" x2="392" y2="130"/>
+    <line x1="245" y1="220" x2="392" y2="170"/><line x1="245" y1="290" x2="392" y2="210"/>
+    <line x1="245" y1="115" x2="392" y2="250"/><line x1="245" y1="185" x2="392" y2="290"/>
+    <line x1="245" y1="255" x2="392" y2="170"/><line x1="245" y1="80" x2="392" y2="250"/>
+    <!-- hidden2 -> output -->
+    <line x1="392" y1="130" x2="539" y2="140"/><line x1="392" y1="170" x2="539" y2="190"/>
+    <line x1="392" y1="210" x2="539" y2="240"/><line x1="392" y1="250" x2="539" y2="140"/>
+    <line x1="392" y1="290" x2="539" y2="240"/><line x1="392" y1="170" x2="539" y2="240"/>
+    <!-- output -> core -->
+    <line x1="539" y1="140" x2="833" y2="190" stroke="#bf00ff" stroke-opacity="0.7"/>
+    <line x1="539" y1="190" x2="833" y2="190" stroke="#bf00ff" stroke-opacity="0.7"/>
+    <line x1="539" y1="240" x2="833" y2="190" stroke="#bf00ff" stroke-opacity="0.7"/>
+  </g>
+
+  <!-- animated pulse dots on key paths -->
+  <circle cx="170" cy="118" r="3" fill="#00f5ff" filter="url(#glow)"><animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/></circle>
+  <circle cx="320" cy="155" r="3" fill="#bf00ff" filter="url(#glow)"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="465" cy="200" r="3" fill="#00ff88" filter="url(#glow)"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="680" cy="190" r="4" fill="#ff006e" filter="url(#glow)"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/></circle>
+
+  <!-- input layer -->
+  <g filter="url(#glow)">
+    <circle cx="98" cy="95" r="9" fill="url(#cyan)"/>
+    <circle cx="98" cy="140" r="9" fill="url(#cyan)"/>
+    <circle cx="98" cy="185" r="9" fill="url(#cyan)"/>
+    <circle cx="98" cy="230" r="9" fill="url(#cyan)"/>
+    <circle cx="98" cy="275" r="9" fill="url(#cyan)"/>
+  </g>
+
+  <!-- hidden 1 -->
+  <g filter="url(#glow)">
+    <circle cx="245" cy="80" r="8" fill="url(#magenta)"/>
+    <circle cx="245" cy="115" r="8" fill="url(#magenta)"/>
+    <circle cx="245" cy="150" r="8" fill="url(#magenta)"/>
+    <circle cx="245" cy="185" r="8" fill="url(#magenta)"/>
+    <circle cx="245" cy="220" r="8" fill="url(#magenta)"/>
+    <circle cx="245" cy="255" r="8" fill="url(#magenta)"/>
+    <circle cx="245" cy="290" r="8" fill="url(#magenta)"/>
+  </g>
+
+  <!-- hidden 2 -->
+  <g filter="url(#glow)">
+    <circle cx="392" cy="90" r="8" fill="url(#magenta)"/>
+    <circle cx="392" cy="130" r="8" fill="url(#magenta)"/>
+    <circle cx="392" cy="170" r="8" fill="url(#magenta)"/>
+    <circle cx="392" cy="210" r="8" fill="url(#magenta)"/>
+    <circle cx="392" cy="250" r="8" fill="url(#magenta)"/>
+    <circle cx="392" cy="290" r="8" fill="url(#magenta)"/>
+  </g>
+
+  <!-- output -->
+  <g filter="url(#bigGlow)">
+    <circle cx="539" cy="140" r="10" fill="url(#green)"/>
+    <circle cx="539" cy="190" r="10" fill="url(#green)"/>
+    <circle cx="539" cy="240" r="10" fill="url(#green)"/>
+  </g>
+
+  <!-- inference core -->
+  <g transform="translate(833 190)" filter="url(#bigGlow)">
+    <circle r="42" fill="#0d0221" stroke="#00f5ff" stroke-width="2"/>
+    <circle r="28" fill="none" stroke="#bf00ff" stroke-width="1.5" stroke-opacity="0.8"/>
+    <circle r="14" fill="none" stroke="#00ff88" stroke-width="1" stroke-opacity="0.6"/>
+    <text y="6" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#00f5ff">AI</text>
+  </g>
+
+  <!-- layer labels -->
+  <g font-family="monospace" font-size="12" fill="#6e7681">
+    <text x="98" y="330" text-anchor="middle">SENSORY INPUT</text>
+    <text x="245" y="330" text-anchor="middle">LAYER 1</text>
+    <text x="392" y="330" text-anchor="middle">LAYER 2</text>
+    <text x="539" y="330" text-anchor="middle">ACTIVATION</text>
+    <text x="833" y="330" text-anchor="middle">INFERENCE</text>
+  </g>
+</svg>
