@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" role="img" aria-label="Neural network visualization">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050810"/>
+      <stop offset="50%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#0d0221"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#bf00ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="nodeCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#0066ff"/>
+    </radialGradient>
+    <radialGradient id="nodeMagenta" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#ff006e"/>
+      <stop offset="100%" stop-color="#bf00ff"/>
+    </radialGradient>
+    <radialGradient id="nodeGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#39ff14"/>
+      <stop offset="100%" stop-color="#00ff88"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="920" height="220" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="918" height="218" rx="15" fill="none" stroke="#00f5ff" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- grid -->
+  <g stroke="#00f5ff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 55 H920 M0 110 H920 M0 165 H920"/>
+    <path d="M115 0 V220 M230 0 V220 M345 0 V220 M460 0 V220 M575 0 V220 M690 0 V220 M805 0 V220"/>
+  </g>
+
+  <!-- layer positions -->
+  <!-- input: x=90, hidden1: x=280, hidden2: x=470, output: x=660, brain: x=820 -->
+
+  <!-- connections input -> hidden1 -->
+  <g stroke="url(#wire)" stroke-width="1">
+    <line x1="90" y1="50" x2="280" y2="35"/><line x1="90" y1="50" x2="280" y2="70"/>
+    <line x1="90" y1="50" x2="280" y2="105"/><line x1="90" y1="50" x2="280" y2="140"/>
+    <line x1="90" y1="50" x2="280" y2="175"/><line x1="90" y1="85" x2="280" y2="35"/>
+    <line x1="90" y1="85" x2="280" y2="70"/><line x1="90" y1="85" x2="280" y2="105"/>
+    <line x1="90" y1="85" x2="280" y2="140"/><line x1="90" y1="85" x2="280" y2="175"/>
+    <line x1="90" y1="120" x2="280" y2="35"/><line x1="90" y1="120" x2="280" y2="70"/>
+    <line x1="90" y1="120" x2="280" y2="105"/><line x1="90" y1="120" x2="280" y2="140"/>
+    <line x1="90" y1="120" x2="280" y2="175"/><line x1="90" y1="155" x2="280" y2="70"/>
+    <line x1="90" y1="155" x2="280" y2="105"/><line x1="90" y1="155" x2="280" y2="140"/>
+    <line x1="90" y1="190" x2="280" y2="105"/><line x1="90" y1="190" x2="280" y2="175"/>
+  </g>
+
+  <!-- hidden1 -> hidden2 -->
+  <g stroke="url(#wire)" stroke-width="1">
+    <line x1="280" y1="35" x2="470" y2="40"/><line x1="280" y1="70" x2="470" y2="75"/>
+    <line x1="280" y1="105" x2="470" y2="110"/><line x1="280" y1="140" x2="470" y2="145"/>
+    <line x1="280" y1="175" x2="470" y2="180"/><line x1="280" y1="35" x2="470" y2="110"/>
+    <line x1="280" y1="70" x2="470" y2="145"/><line x1="280" y1="105" x2="470" y2="40"/>
+    <line x1="280" y1="140" x2="470" y2="180"/><line x1="280" y1="175" x2="470" y2="75"/>
+  </g>
+
+  <!-- hidden2 -> output -->
+  <g stroke="url(#wire)" stroke-width="1.2">
+    <line x1="470" y1="40" x2="660" y2="70"/><line x1="470" y1="75" x2="660" y2="110"/>
+    <line x1="470" y1="110" x2="660" y2="150"/><line x1="470" y1="145" x2="660" y2="70"/>
+    <line x1="470" y1="180" x2="660" y2="150"/><line x1="470" y1="110" x2="660" y2="110"/>
+  </g>
+
+  <!-- output -> brain icon area -->
+  <g stroke="#bf00ff" stroke-opacity="0.45" stroke-width="1.5">
+    <line x1="660" y1="70" x2="800" y2="110"/>
+    <line x1="660" y1="110" x2="800" y2="110"/>
+    <line x1="660" y1="150" x2="800" y2="110"/>
+  </g>
+
+  <!-- input nodes -->
+  <g filter="url(#glow)">
+    <circle cx="90" cy="50" r="7" fill="url(#nodeCyan)"/>
+    <circle cx="90" cy="85" r="7" fill="url(#nodeCyan)"/>
+    <circle cx="90" cy="120" r="7" fill="url(#nodeCyan)"/>
+    <circle cx="90" cy="155" r="7" fill="url(#nodeCyan)"/>
+    <circle cx="90" cy="190" r="7" fill="url(#nodeCyan)"/>
+  </g>
+
+  <!-- hidden1 nodes -->
+  <g filter="url(#glow)">
+    <circle cx="280" cy="35" r="6.5" fill="url(#nodeMagenta)"/>
+    <circle cx="280" cy="70" r="6.5" fill="url(#nodeMagenta)"/>
+    <circle cx="280" cy="105" r="6.5" fill="url(#nodeMagenta)"/>
+    <circle cx="280" cy="140" r="6.5" fill="url(#nodeMagenta)"/>
+    <circle cx="280" cy="175" r="6.5" fill="url(#nodeMagenta)"/>
+  </g>
+
+  <!-- hidden2 nodes -->
+  <g filter="url(#glow)">
+    <circle cx="470" cy="40" r="6.5" fill="url(#nodeMagenta)"/>
+    <circle cx="470" cy="75" r="6.5" fill="url(#nodeMagenta)"/>
+    <circle cx="470" cy="110" r="6.5" fill="url(#nodeMagenta)"/>
+    <circle cx="470" cy="145" r="6.5" fill="url(#nodeMagenta)"/>
+    <circle cx="470" cy="180" r="6.5" fill="url(#nodeMagenta)"/>
+  </g>
+
+  <!-- output nodes -->
+  <g filter="url(#softGlow)">
+    <circle cx="660" cy="70" r="8" fill="url(#nodeGreen)"/>
+    <circle cx="660" cy="110" r="8" fill="url(#nodeGreen)"/>
+    <circle cx="660" cy="150" r="8" fill="url(#nodeGreen)"/>
+  </g>
+
+  <!-- AI brain core -->
+  <g transform="translate(800 110)" filter="url(#softGlow)">
+    <circle r="28" fill="#12082a" stroke="#00f5ff" stroke-width="1.5" stroke-opacity="0.8"/>
+    <circle r="18" fill="none" stroke="#bf00ff" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M-8,-4 C-8,-12 8,-12 8,-4 C12,-2 12,6 4,8 C0,12 -4,8 -8,6 C-12,6 -12,-2 -8,-4 Z"
+          fill="none" stroke="#00ff88" stroke-width="1.4" stroke-opacity="0.9"/>
+    <circle cx="-4" cy="-2" r="1.5" fill="#00f5ff"/>
+    <circle cx="4" cy="-2" r="1.5" fill="#00f5ff"/>
+  </g>
+
+  <!-- labels -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681">
+    <text x="90" y="212" text-anchor="middle">INPUT</text>
+    <text x="280" y="212" text-anchor="middle">HIDDEN</text>
+    <text x="470" y="212" text-anchor="middle">HIDDEN</text>
+    <text x="660" y="212" text-anchor="middle">OUTPUT</text>
+    <text x="800" y="212" text-anchor="middle">AI</text>
+  </g>
+
+  <text x="460" y="28" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#00f5ff" fill-opacity="0.85" letter-spacing="3">
+    NEURAL · LEARNING · INFERENCE
+  </text>
+</svg>
