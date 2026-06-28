@@ -4,11 +4,11 @@
 
 **AI Team Lead | Principal Data Scientist**
 
-Building production neural systems, agentic AI workflows, and LLM platforms for Fintech, HealthTech, and Insurance.
+Building production ML/LLM systems — foundation models, agentic AI, RAG pipelines, and LLMOps — for Fintech, HealthTech, and Insurance.
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=21&duration=3200&pause=900&color=22D3EE&center=true&width=900&lines=Neural+pipelines+from+research+to+production;Multi-agent+systems+with+CrewAI+%26+LangChain;RAG%2C+LLM+distillation%2C+and+MLOps+at+scale"/>
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=21&duration=3200&pause=900&color=22D3EE&center=true&width=900&lines=Foundation+models%2C+RL+%26+post-training+at+scale;Agentic+AI+with+CrewAI%2C+LangChain+%26+MCP;RAG%2C+fine-tuning%2C+distillation+%26+LLMOps"/>
 
 <br/>
 
@@ -22,7 +22,7 @@ Building production neural systems, agentic AI workflows, and LLM platforms for 
 
 ## About
 
-Principal AI engineer with **7+ years** of experience shipping high-impact ML and LLM systems. I work across the full stack: **deep learning**, **RAG**, **multi-agent orchestration**, and **MLOps on Kubernetes**.
+Principal AI engineer with **7+ years** shipping production ML and LLM systems from research to business impact. Full stack: **deep learning (PyTorch, TensorFlow)**, **NLP & generative AI**, **RAG & foundation models**, **reinforcement learning & post-training**, **agentic orchestration**, and **MLOps / LLMOps on Kubernetes**.
 
 Currently **AI Team Lead @ Vortem**. Previously Lead Data Scientist @ Dojtech and Senior Data Scientist @ TechTap.
 
@@ -30,35 +30,35 @@ Currently **AI Team Lead @ Vortem**. Previously Lead Data Scientist @ Dojtech an
 
 ## Neural Systems
 
-I design end-to-end learning pipelines: feature ingestion, representation learning, inference, and monitoring in production.
+I design end-to-end ML pipelines: data ingestion, model training, batch/real-time inference, evaluation, and production monitoring.
 
 <img src="https://raw.githubusercontent.com/msabbaszadeh/msabbaszadeh/main/neural-header.svg" width="100%" alt="Neural inference pipeline diagram"/>
 
 | Focus | Production capabilities |
 |-------|------------------------|
-| Generative AI | RAG, fine-tuning, CPT, DPO, RLHF, LLM-to-SLM distillation |
-| Inference | vLLM, GGUF/AWQ quantization, low-latency serving |
-| MLOps | MLflow, Kubernetes, Docker, CI/CD on AWS / GCP / Azure |
-| Classical ML | XGBoost, survival analysis, fraud/risk engines, A/B testing |
+| Generative AI & LLM | Foundation models, RAG, fine-tuning, CPT, DPO, RLHF, post-training alignment, distillation, prompt engineering, Hugging Face |
+| Deep Learning & RL | PyTorch, TensorFlow, reinforcement learning, on-policy alignment, representation learning, NLP |
+| Inference & Ops | vLLM, GPU inference, quantization/compression (GGUF/AWQ), LLMOps, MLflow, Kubernetes, Docker, Terraform, CI/CD on AWS / GCP / Azure |
+| Classical ML | scikit-learn, XGBoost, statistics, optimization, survival analysis, fraud/risk engines, A/B testing |
 
 ---
 
 ## Agentic AI
 
-I build **autonomous multi-agent systems** that plan, retrieve, execute tools, validate outputs, and iterate - not one-shot prompt chains.
+I build **autonomous multi-agent systems** with tool use, semantic search, and evaluation frameworks — systems that plan, retrieve, execute, validate, and iterate, not one-shot prompt chains.
 
 <img src="https://raw.githubusercontent.com/msabbaszadeh/msabbaszadeh/main/agentic-ai.svg" width="100%" alt="Multi-agent orchestration with Research, Executor, and Critic agents"/>
 
 | Agent | Role | Tools |
 |-------|------|-------|
-| **Research Agent** | Retrieves context from documents and vector stores | RAG, Pinecone, Qdrant |
+| **Research Agent** | Retrieves context via RAG, semantic & similarity search | Vector DBs, Pinecone, Qdrant |
 | **Executor Agent** | Calls APIs, runs code, executes business logic | Python, SQL, REST, MCP |
-| **Critic Agent** | Validates quality, safety, and output correctness | Guardrails, eval loops |
-| **Orchestrator** | Routes tasks, manages memory, coordinates agents | CrewAI, LangChain |
+| **Critic Agent** | Validates quality, safety, and responsible AI compliance | Guardrails, model evaluation |
+| **Orchestrator** | Routes tasks, manages memory, coordinates agents | CrewAI, LangChain, LlamaIndex |
 
 ```mermaid
 flowchart TB
-    O[Orchestrator\nCrewAI / LangChain]
+    O[Orchestrator\nCrewAI / LangChain / LlamaIndex]
     R[Research Agent\nRAG + Vector Search]
     E[Executor Agent\nTools + API + Code]
     C[Critic Agent\nValidation + Guardrails]
@@ -84,7 +84,7 @@ flowchart TB
     style M fill:#0f172a,stroke:#34d399,color:#e2e8f0
 ```
 
-**Stack:** CrewAI, LangChain, MCP, tool design, agent memory, human-in-the-loop workflows.
+**Stack:** CrewAI, LangChain, LlamaIndex, MCP, prompt engineering, guardrails, LLMOps, human-in-the-loop workflows.
 
 ---
 
@@ -102,12 +102,12 @@ flowchart TB
 
 | Type | Project | Impact |
 |------|---------|--------|
-| RAG | [**Electron**](https://github.com/msabbaszadeh/Electron) | Open-source recommendation engine with vector search and LLM personalization |
-| ML | [**Cardiovascular ML**](https://github.com/msabbaszadeh/Machine-learning-DNN-ETC-on-cardiovascular-disease-patients-data) | Predictive modeling on 300K+ patient records |
-| Prod | **Insurance RAG** *(private)* | Claims automation with custom chunking - **+12% throughput** |
-| Lab | [**Diabetes SVM**](https://github.com/msabbaszadeh/diabets-analysis-SVM-model) | Health analytics and classical ML notebooks |
+| RAG | [**Electron**](https://github.com/msabbaszadeh/Electron) | Recommendation engine with vector search, semantic retrieval, and LLM personalization |
+| DL | [**Cardiovascular ML**](https://github.com/msabbaszadeh/Machine-learning-DNN-ETC-on-cardiovascular-disease-patients-data) | Deep learning & predictive modeling on 300K+ patient records (PyTorch, TensorFlow) |
+| Prod | **Insurance RAG** *(private)* | Production LLM pipeline — custom chunking, model evaluation, claims automation (**+12% throughput**) |
+| ML | [**Diabetes SVM**](https://github.com/msabbaszadeh/diabets-analysis-SVM-model) | Classical ML, statistics, and health analytics notebooks |
 
-> Most enterprise agentic and MLOps systems are in private repositories. Architecture walkthroughs are available on request.
+> Most enterprise agentic AI, LLMOps, and production ML systems are in private repositories. Architecture walkthroughs are available on request.
 
 ---
 
