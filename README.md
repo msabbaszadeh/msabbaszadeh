@@ -32,7 +32,7 @@ Currently **AI Team Lead @ Vortem**. Previously Lead Data Scientist @ Dojtech an
 
 I design end-to-end learning pipelines: feature ingestion, representation learning, inference, and monitoring in production.
 
-<img src="https://raw.githubusercontent.com/msabbaszadeh/msabbaszadeh/main/assets/neural-header.svg" width="100%" alt="Neural inference pipeline diagram"/>
+<img src="https://raw.githubusercontent.com/msabbaszadeh/msabbaszadeh/main/neural-header.svg" width="100%" alt="Neural inference pipeline diagram"/>
 
 | Focus | Production capabilities |
 |-------|------------------------|
@@ -47,7 +47,7 @@ I design end-to-end learning pipelines: feature ingestion, representation learni
 
 I build **autonomous multi-agent systems** that plan, retrieve, execute tools, validate outputs, and iterate - not one-shot prompt chains.
 
-<img src="https://raw.githubusercontent.com/msabbaszadeh/msabbaszadeh/main/assets/agentic-ai.svg" width="100%" alt="Multi-agent orchestration with Research, Executor, and Critic agents"/>
+<img src="https://raw.githubusercontent.com/msabbaszadeh/msabbaszadeh/main/agentic-ai.svg" width="100%" alt="Multi-agent orchestration with Research, Executor, and Critic agents"/>
 
 | Agent | Role | Tools |
 |-------|------|-------|
