@@ -1,137 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 340" role="img" aria-label="Deep neural network architecture">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" role="img" aria-label="Neural network architecture">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030508"/>
-      <stop offset="45%" stop-color="#0a0e17"/>
-      <stop offset="100%" stop-color="#150528"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1100" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#04060d"/>
+      <stop offset="100%" stop-color="#0f0a24"/>
     </linearGradient>
-    <linearGradient id="wire" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.08"/>
-      <stop offset="45%" stop-color="#bf00ff" stop-opacity="0.75"/>
-      <stop offset="100%" stop-color="#00ff88" stop-opacity="0.08"/>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#121826"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
     </linearGradient>
-    <radialGradient id="cyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="30%" stop-color="#00f5ff"/>
-      <stop offset="100%" stop-color="#0044aa"/>
-    </radialGradient>
-    <radialGradient id="magenta" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="30%" stop-color="#ff006e"/>
-      <stop offset="100%" stop-color="#7700cc"/>
-    </radialGradient>
-    <radialGradient id="green" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="30%" stop-color="#39ff14"/>
-      <stop offset="100%" stop-color="#008855"/>
-    </radialGradient>
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="8" result="b"/>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <rect width="980" height="340" rx="18" fill="url(#bg)"/>
-  <rect x="1.5" y="1.5" width="977" height="337" rx="16" fill="none" stroke="#00f5ff" stroke-opacity="0.35" stroke-width="2"/>
+  <rect width="1100" height="300" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1098" height="298" rx="15" fill="none" stroke="#1f2937" stroke-width="1"/>
 
-  <text x="490" y="38" text-anchor="middle" font-family="monospace" font-size="16" font-weight="700" fill="#00f5ff" letter-spacing="4">DEEP NEURAL NETWORK</text>
-  <text x="490" y="58" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e" letter-spacing="2">INPUT  -  HIDDEN LAYERS  -  OUTPUT  -  INFERENCE</text>
+  <text x="550" y="34" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#e5e7eb">Neural Inference Pipeline</text>
+  <text x="550" y="54" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9ca3af">From raw signals to production predictions</text>
 
-  <!-- grid -->
-  <g stroke="#00f5ff" stroke-opacity="0.05">
-    <path d="M0 85 H980 M0 170 H980 M0 255 H980"/>
-    <path d="M98 70 V300 M245 70 V300 M392 70 V300 M539 70 V300 M686 70 V300 M833 70 V300"/>
+  <!-- panels -->
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="40" y="80" width="200" height="170" rx="14" fill="url(#panel)" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <rect x="280" y="80" width="220" height="170" rx="14" fill="url(#panel)" stroke="#a855f7" stroke-opacity="0.35"/>
+    <rect x="540" y="80" width="220" height="170" rx="14" fill="url(#panel)" stroke="#a855f7" stroke-opacity="0.35"/>
+    <rect x="800" y="80" width="260" height="170" rx="14" fill="url(#panel)" stroke="#34d399" stroke-opacity="0.35"/>
+
+    <text x="140" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#22d3ee">INPUT LAYER</text>
+    <text x="390" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#c084fc">HIDDEN LAYER 1</text>
+    <text x="650" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#c084fc">HIDDEN LAYER 2</text>
+    <text x="930" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#34d399">OUTPUT</text>
   </g>
 
-  <!-- synapse wires -->
-  <g stroke="url(#wire)" stroke-width="1">
-    <!-- input 5 nodes x hidden1 7 nodes -->
-    <line x1="98" y1="95" x2="245" y2="80"/><line x1="98" y1="95" x2="245" y2="115"/>
-    <line x1="98" y1="95" x2="245" y2="150"/><line x1="98" y1="95" x2="245" y2="185"/>
-    <line x1="98" y1="95" x2="245" y2="220"/><line x1="98" y1="95" x2="245" y2="255"/>
-    <line x1="98" y1="95" x2="245" y2="290"/>
-    <line x1="98" y1="140" x2="245" y2="80"/><line x1="98" y1="140" x2="245" y2="150"/>
-    <line x1="98" y1="140" x2="245" y2="220"/><line x1="98" y1="140" x2="245" y2="290"/>
-    <line x1="98" y1="185" x2="245" y2="115"/><line x1="98" y1="185" x2="245" y2="185"/>
-    <line x1="98" y1="185" x2="245" y2="255"/><line x1="98" y1="230" x2="245" y2="150"/>
-    <line x1="98" y1="230" x2="245" y2="220"/><line x1="98" y1="275" x2="245" y2="185"/>
-    <line x1="98" y1="275" x2="245" y2="290"/><line x1="98" y1="320" x2="245" y2="255"/>
-    <!-- hidden1 -> hidden2 -->
-    <line x1="245" y1="80" x2="392" y2="90"/><line x1="245" y1="150" x2="392" y2="130"/>
-    <line x1="245" y1="220" x2="392" y2="170"/><line x1="245" y1="290" x2="392" y2="210"/>
-    <line x1="245" y1="115" x2="392" y2="250"/><line x1="245" y1="185" x2="392" y2="290"/>
-    <line x1="245" y1="255" x2="392" y2="170"/><line x1="245" y1="80" x2="392" y2="250"/>
-    <!-- hidden2 -> output -->
-    <line x1="392" y1="130" x2="539" y2="140"/><line x1="392" y1="170" x2="539" y2="190"/>
-    <line x1="392" y1="210" x2="539" y2="240"/><line x1="392" y1="250" x2="539" y2="140"/>
-    <line x1="392" y1="290" x2="539" y2="240"/><line x1="392" y1="170" x2="539" y2="240"/>
-    <!-- output -> core -->
-    <line x1="539" y1="140" x2="833" y2="190" stroke="#bf00ff" stroke-opacity="0.7"/>
-    <line x1="539" y1="190" x2="833" y2="190" stroke="#bf00ff" stroke-opacity="0.7"/>
-    <line x1="539" y1="240" x2="833" y2="190" stroke="#bf00ff" stroke-opacity="0.7"/>
-  </g>
-
-  <!-- animated pulse dots on key paths -->
-  <circle cx="170" cy="118" r="3" fill="#00f5ff" filter="url(#glow)"><animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/></circle>
-  <circle cx="320" cy="155" r="3" fill="#bf00ff" filter="url(#glow)"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/></circle>
-  <circle cx="465" cy="200" r="3" fill="#00ff88" filter="url(#glow)"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/></circle>
-  <circle cx="680" cy="190" r="4" fill="#ff006e" filter="url(#glow)"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/></circle>
-
-  <!-- input layer -->
+  <!-- nodes input -->
   <g filter="url(#glow)">
-    <circle cx="98" cy="95" r="9" fill="url(#cyan)"/>
-    <circle cx="98" cy="140" r="9" fill="url(#cyan)"/>
-    <circle cx="98" cy="185" r="9" fill="url(#cyan)"/>
-    <circle cx="98" cy="230" r="9" fill="url(#cyan)"/>
-    <circle cx="98" cy="275" r="9" fill="url(#cyan)"/>
+    <circle cx="100" cy="145" r="11" fill="#0a0e17" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="140" cy="130" r="11" fill="#0a0e17" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="180" cy="155" r="11" fill="#0a0e17" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="120" cy="190" r="11" fill="#0a0e17" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="170" cy="210" r="11" fill="#0a0e17" stroke="#22d3ee" stroke-width="2"/>
   </g>
 
   <!-- hidden 1 -->
   <g filter="url(#glow)">
-    <circle cx="245" cy="80" r="8" fill="url(#magenta)"/>
-    <circle cx="245" cy="115" r="8" fill="url(#magenta)"/>
-    <circle cx="245" cy="150" r="8" fill="url(#magenta)"/>
-    <circle cx="245" cy="185" r="8" fill="url(#magenta)"/>
-    <circle cx="245" cy="220" r="8" fill="url(#magenta)"/>
-    <circle cx="245" cy="255" r="8" fill="url(#magenta)"/>
-    <circle cx="245" cy="290" r="8" fill="url(#magenta)"/>
+    <circle cx="320" cy="135" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="360" cy="160" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="400" cy="130" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="440" cy="170" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="380" cy="205" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="420" cy="215" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
   </g>
 
   <!-- hidden 2 -->
   <g filter="url(#glow)">
-    <circle cx="392" cy="90" r="8" fill="url(#magenta)"/>
-    <circle cx="392" cy="130" r="8" fill="url(#magenta)"/>
-    <circle cx="392" cy="170" r="8" fill="url(#magenta)"/>
-    <circle cx="392" cy="210" r="8" fill="url(#magenta)"/>
-    <circle cx="392" cy="250" r="8" fill="url(#magenta)"/>
-    <circle cx="392" cy="290" r="8" fill="url(#magenta)"/>
+    <circle cx="580" cy="140" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="620" cy="165" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="660" cy="135" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="700" cy="175" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="640" cy="210" r="10" fill="#0a0e17" stroke="#a855f7" stroke-width="2"/>
   </g>
 
   <!-- output -->
-  <g filter="url(#bigGlow)">
-    <circle cx="539" cy="140" r="10" fill="url(#green)"/>
-    <circle cx="539" cy="190" r="10" fill="url(#green)"/>
-    <circle cx="539" cy="240" r="10" fill="url(#green)"/>
+  <g filter="url(#glow)">
+    <circle cx="880" cy="155" r="13" fill="#0a0e17" stroke="#34d399" stroke-width="2.5"/>
+    <circle cx="930" cy="180" r="13" fill="#0a0e17" stroke="#34d399" stroke-width="2.5"/>
+    <circle cx="980" cy="150" r="13" fill="#0a0e17" stroke="#34d399" stroke-width="2.5"/>
   </g>
 
-  <!-- inference core -->
-  <g transform="translate(833 190)" filter="url(#bigGlow)">
-    <circle r="42" fill="#0d0221" stroke="#00f5ff" stroke-width="2"/>
-    <circle r="28" fill="none" stroke="#bf00ff" stroke-width="1.5" stroke-opacity="0.8"/>
-    <circle r="14" fill="none" stroke="#00ff88" stroke-width="1" stroke-opacity="0.6"/>
-    <text y="6" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#00f5ff">AI</text>
+  <!-- synapses - clean curves -->
+  <g fill="none" stroke="url(#wire)" stroke-width="1.2" opacity="0.9">
+    <path d="M111 145 C180 145,220 135,320 135"/>
+    <path d="M140 130 C210 130,250 160,360 160"/>
+    <path d="M180 155 C250 155,290 130,400 130"/>
+    <path d="M120 190 C200 190,240 170,440 170"/>
+    <path d="M170 210 C240 210,280 205,380 205"/>
+    <path d="M330 135 C470 135,520 140,580 140"/>
+    <path d="M360 160 C500 160,540 165,620 165"/>
+    <path d="M400 130 C520 130,560 135,660 135"/>
+    <path d="M440 170 C560 170,600 175,700 175"/>
+    <path d="M380 205 C520 205,560 210,640 210"/>
+    <path d="M590 140 C740 140,820 155,880 155"/>
+    <path d="M620 165 C760 165,850 180,930 180"/>
+    <path d="M660 135 C780 135,900 150,980 150"/>
   </g>
 
-  <!-- layer labels -->
-  <g font-family="monospace" font-size="12" fill="#6e7681">
-    <text x="98" y="330" text-anchor="middle">SENSORY INPUT</text>
-    <text x="245" y="330" text-anchor="middle">LAYER 1</text>
-    <text x="392" y="330" text-anchor="middle">LAYER 2</text>
-    <text x="539" y="330" text-anchor="middle">ACTIVATION</text>
-    <text x="833" y="330" text-anchor="middle">INFERENCE</text>
+  <!-- flow arrows between panels -->
+  <g fill="#6b7280" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">
+    <text x="252" y="175">></text>
+    <text x="512" y="175">></text>
+    <text x="772" y="175">></text>
+  </g>
+
+  <!-- legend -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#9ca3af">
+    <text x="140" y="235" text-anchor="middle">Raw features</text>
+    <text x="390" y="235" text-anchor="middle">Non-linear transforms</text>
+    <text x="650" y="235" text-anchor="middle">Representation learning</text>
+    <text x="930" y="235" text-anchor="middle">Prediction / inference</text>
   </g>
 </svg>
