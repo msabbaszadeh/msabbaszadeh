@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 40" role="img" aria-label="Neural pulse divider">
+  <defs>
+    <linearGradient id="pulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00f5ff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#bf00ff" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#00ff88" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+  <line x1="0" y1="20" x2="800" y2="20" stroke="#30363d" stroke-width="1"/>
+  <path d="M0 20 L60 20 L75 8 L90 32 L105 20 L800 20"
+        fill="none" stroke="url(#pulse)" stroke-width="2.5" filter="url(#blur)"/>
+  <path d="M0 20 L60 20 L75 8 L90 32 L105 20 L800 20"
+        fill="none" stroke="url(#pulse)" stroke-width="1.5"/>
+  <circle cx="90" cy="20" r="3" fill="#00f5ff" filter="url(#blur)"/>
+</svg>
