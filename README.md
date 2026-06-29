@@ -15,8 +15,37 @@ Building production ML/LLM systems — foundation models, agentic AI, RAG pipeli
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/msabbaszadeh)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:msabbaszadeh1997@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/msabbaszadeh)
+[![Flagship — Electron](https://img.shields.io/badge/Flagship_Project-Electron-22D3EE?style=for-the-badge&logo=qdrant&logoColor=white)](https://github.com/msabbaszadeh/Electron)
 
 </div>
+
+---
+
+## Flagship Project — [Electron](https://github.com/msabbaszadeh/Electron)
+
+<table>
+<tr>
+<td width="62%" valign="top">
+
+**Open-source RAG recommendation system** — multi-agent orchestration, Qdrant vector search, and LLM personalization.
+
+| | |
+|---|---|
+| **Stack** | React · TypeScript · FastAPI · Qdrant · Gemini · Ollama |
+| **Capabilities** | RAG pipelines · semantic retrieval · embedding service · guardrails |
+| **Status** | Production-grade open-source flagship |
+
+[![View Electron on GitHub](https://img.shields.io/badge/View_Repository-Electron-181717?style=for-the-badge&logo=github&logoColor=22D3EE)](https://github.com/msabbaszadeh/Electron)
+[![Live README & Docs](https://img.shields.io/badge/Documentation-Setup_Guide-22D3EE?style=for-the-badge&logo=readthedocs&logoColor=white)](https://github.com/msabbaszadeh/Electron#readme)
+
+</td>
+<td width="38%" align="center">
+
+<img src="https://github.com/user-attachments/assets/60b1c8f7-e13a-4d19-9bdd-d5af8f16267c" width="100%" alt="Electron RAG recommendation system UI"/>
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -100,9 +129,9 @@ flowchart TB
 
 ## Selected Work
 
-| Type | Project | Impact |
-|------|---------|--------|
-| RAG | [**Electron**](https://github.com/msabbaszadeh/Electron) | Recommendation engine with vector search, semantic retrieval, and LLM personalization |
+| | Project | Impact |
+|---|---------|--------|
+| **Flagship** | [**Electron**](https://github.com/msabbaszadeh/Electron) | RAG recommendation engine — vector search, semantic retrieval, multi-agent LLM personalization |
 | DL | [**Cardiovascular ML**](https://github.com/msabbaszadeh/Machine-learning-DNN-ETC-on-cardiovascular-disease-patients-data) | Deep learning & predictive modeling on 300K+ patient records (PyTorch, TensorFlow) |
 | Prod | **Insurance RAG** *(private)* | Production LLM pipeline — custom chunking, model evaluation, claims automation (**+12% throughput**) |
 | ML | [**Diabetes SVM**](https://github.com/msabbaszadeh/diabets-analysis-SVM-model) | Classical ML, statistics, and health analytics notebooks |
