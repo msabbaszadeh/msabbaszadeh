@@ -61,8 +61,6 @@ Currently **AI Team Lead @ Vortem**. Previously Lead Data Scientist @ Dojtech an
 
 I design end-to-end ML pipelines: data ingestion, model training, batch/real-time inference, evaluation, and production monitoring.
 
-<img src="https://raw.githubusercontent.com/msabbaszadeh/msabbaszadeh/main/neural-header.svg" width="100%" alt="Neural inference pipeline diagram"/>
-
 | Focus | Production capabilities |
 |-------|------------------------|
 | Generative AI & LLM | Foundation models, RAG, fine-tuning, CPT, DPO, RLHF, post-training alignment, distillation, prompt engineering, Hugging Face |
